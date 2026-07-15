@@ -1,0 +1,20 @@
+{
+  "phase": "phase_2",
+  "iteration": 3,
+  "passed": true,
+  "checks": [
+    {
+      "name": "outputs_exist",
+      "ok": true,
+      "detail": "선언 산출물 8개 모두 존재",
+      "blocking": true
+    },
+    {
+      "name": "pytest",
+      "ok": true,
+      "detail": "......                                                                   [100%]\n6 passed in 1.35s",
+      "blocking": true
+    }
+  ],
+  "findings": []
+}

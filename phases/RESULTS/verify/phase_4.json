@@ -1,0 +1,20 @@
+{
+  "phase": "phase_4",
+  "iteration": 0,
+  "passed": true,
+  "checks": [
+    {
+      "name": "outputs_exist",
+      "ok": true,
+      "detail": "선언 산출물 3개 모두 존재",
+      "blocking": true
+    },
+    {
+      "name": "pytest",
+      "ok": true,
+      "detail": "i/testclient.py:1\n  /sessions/vibrant-relaxed-dijkstra/.local/lib/python3.10/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\ntests/test_query_engine.py::test_q1_term_months\ntests/test_query_engine.py::test_q4_encar_sliding\ntests/test_query_engine.py::test_q5_r_pandan\ntests/test_query_engine.py::test_unknown_returns_no_evidence_or_context\n  /sessions/vibrant-relaxed-dijkstra/.local/lib/python3.10/site-packages/qdrant_client/qdrant_remote.py:275: UserWarning: Failed to obtain server version. Unable to check client-server compatibility. Set check_compatibility=False to skip version check.\n    show_warning(\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n15 passed, 1 skipped, 5 warnings in 6.75s",
+      "blocking": true
+    }
+  ],
+  "findings": []
+}

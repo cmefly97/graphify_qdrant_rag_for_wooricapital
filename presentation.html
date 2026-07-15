@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>우리캐피탈 오토운영팀 상담챗봇 — 프로젝트 소개</title>
+<style>
+:root{--blue:#1f3bb3;--blue2:#3b5bdb;--ink:#161b26;--mut:#6b7280;--line:#e6e8ef;--bg:#f6f8fc;
+  --ok:#0c8a4e;--warn:#c2410c;--card:#fff;--grn:#0c8a4e;--org:#c2410c}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{font-family:'Apple SD Gothic Neo',system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--ink);overflow:hidden}
+.deck{height:100vh;width:100vw;position:relative}
+.slide{position:absolute;inset:0;display:none;flex-direction:column;justify-content:center;padding:5.5vh 7vw;animation:fade .35s ease}
+.slide.active{display:flex}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+h1{font-size:44px;line-height:1.15;letter-spacing:-1.5px}
+h2{font-size:32px;color:var(--blue);margin-bottom:16px;letter-spacing:-.5px}
+h3{font-size:18px;margin:8px 0 4px}
+p,li{font-size:17px;line-height:1.55;color:#28303f}
+.mut{color:var(--mut)}
+.tag{display:inline-block;background:#eaf0ff;color:var(--blue);border:1px solid #cfd9ff;border-radius:20px;padding:5px 14px;font-size:13px;font-weight:700;margin-bottom:16px;width:fit-content}
+.grid{display:grid;gap:14px;margin-top:6px}
+.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:1fr 1fr 1fr}.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;box-shadow:0 1px 3px rgba(20,30,60,.04)}
+.card.lb{border-left:4px solid var(--blue2)}
+.card .k{font-size:12px;color:var(--mut);font-weight:700}
+.card .v{font-size:30px;font-weight:800;color:var(--blue);letter-spacing:-1px}
+ul{margin-left:2px;list-style:none}
+li{position:relative;padding-left:20px;margin:7px 0}
+li::before{content:"▸";position:absolute;left:0;color:var(--blue2);font-weight:700}
+.flow{display:flex;align-items:stretch;gap:6px;flex-wrap:wrap;margin-top:12px}
+.step{flex:1;min-width:104px;background:#fff;border:1px solid var(--line);border-top:3px solid var(--blue2);border-radius:10px;padding:10px 8px;text-align:center}
+.step b{display:block;font-size:14px;margin-bottom:3px}
+.step small{display:block;color:var(--mut);font-size:11px}
+.arrow{align-self:center;color:#aebbd8;font-size:18px}
+.pill{display:inline-block;background:#f0f4ff;border:1px solid #c7d6ff;border-radius:8px;padding:2px 9px;font-size:13px;margin:3px 4px 0 0}
+.ok{color:var(--ok);font-weight:700}.warn{color:var(--warn);font-weight:700}
+.hl{background:linear-gradient(transparent 60%,#ffe9a8 60%);padding:0 2px}
+.center{text-align:center;align-items:center}
+.sub{font-size:19px;color:var(--mut);margin-top:12px;line-height:1.5}
+.kbd{background:#eef1f7;border:1px solid #d6dcea;border-radius:6px;padding:1px 7px;font-size:12px}
+/* mock (demo) */
+.mock{display:flex;border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:8px;height:44vh;background:#fff}
+.mc{flex:1.3;display:flex;flex-direction:column;border-right:1px solid var(--line)}
+.mp{flex:1;display:flex;flex-direction:column;border-right:1px solid var(--line);background:#fafbfc}
+.mp:last-child{border-right:none}
+.mhead{padding:7px 11px;border-bottom:1px solid var(--line);font-size:12px;font-weight:700;color:#555;background:#f2f4f8}
+.mbody{padding:10px;overflow:auto;font-size:12px}
+.bubble{padding:7px 10px;border-radius:10px;margin:5px 0;max-width:92%}
+.bu{background:var(--blue2);color:#fff;margin-left:auto}
+.ba{background:#f1f3f5;border:1px solid var(--line)}
+.tstep{border:1px solid var(--line);border-left:3px solid var(--blue2);border-radius:7px;padding:5px 8px;margin-bottom:6px;font-size:11.5px}
+.tstep .th{display:flex;justify-content:space-between;font-weight:700}
+.tstep .ms{color:#0c8a4e}
+.echip{display:inline-block;background:#f3faf5;border:1px solid #bfe3cd;border-radius:7px;padding:2px 7px;margin:2px 3px 0 0;font-size:11px}
+.foot{position:absolute;bottom:16px;left:7vw;right:7vw;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--mut)}
+.progress{position:absolute;top:0;left:0;height:4px;background:linear-gradient(90deg,#1f3bb3,#3b5bdb);transition:width .3s}
+.dots{display:flex;gap:5px;flex-wrap:wrap}.dot{width:7px;height:7px;border-radius:50%;background:#cdd6ea;cursor:pointer}.dot.on{background:var(--blue)}
+</style>
+</head>
+<body>
+<div class="deck" id="deck">
+
+<!-- 1 TITLE -->
+<section class="slide center">
+  <div class="tag">Graph RAG + Vector Hybrid · 사내망 실연결 검증 완료</div>
+  <h1>우리캐피탈 오토운영팀<br>상담챗봇</h1>
+  <p class="sub">중고오토리스·심사·운영기준을 <b>근거·출처가 명확하게, 수치 환각 없이</b> 답하는<br>그래프RAG + 벡터 임베딩 하이브리드 검색 시스템</p>
+  <div style="margin-top:22px" class="mut">HCX-30B · Octen-8B · Qdrant · graphify · SQLite(tables.db) · FastAPI</div>
+</section>
+
+<!-- 2 PROBLEM -->
+<section class="slide">
+  <h2>왜 만들었나</h2>
+  <div class="grid g2">
+    <div>
+      <ul>
+        <li>심사·운영 기준이 <b>3종 출처</b>(FAQ·규정·월별 운영기준)에 흩어져 있고 <b>수치가 매달 변동</b></li>
+        <li>상담사가 정확한 금리·등급·한도를 빠르게 찾기 어려움</li>
+        <li>일반 LLM/RAG는 <span class="warn">정밀 수치에서 환각</span> — 금융 상담엔 치명적("21.0%"가 "20.0%"만 돼도 사고)</li>
+      </ul>
+    </div>
+    <div class="card lb">
+      <h3>데이터 현황</h3>
+      <p>문서 8종 · 청크 252개 · 그래프 57노드·66엣지·9커뮤니티</p>
+      <p class="mut" style="margin-top:6px">FAQ(xlsx) / 규정(docx·md) / 운영기준(pdf·docx) / 이미지</p>
+      <p style="margin-top:10px" class="hl">graphify 진단: "코퍼스가 작아 그래프만으론 부족" → 하이브리드 필요</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3 PRINCIPLES -->
+<section class="slide">
+  <h2>해결 원칙 — 환각 없는 상담</h2>
+  <div class="grid g3">
+    <div class="card lb"><h3>① 수치 환각 금지</h3><p>금리·등급·금액은 <b>구조화 테이블(SQLite)</b> 조회 결과로만 생성. LLM 자유생성 금지.</p></div>
+    <div class="card lb"><h3>② 출처 의무</h3><p>모든 답변에 근거(문서·조항·유효일자)를 첨부. 근거 없는 주장 금지.</p></div>
+    <div class="card lb"><h3>③ 모르면 모른다</h3><p>근거 없으면 <b>"규정에 명시되어 있지 않습니다"</b>. 추측 금지.</p></div>
+  </div>
+  <p style="margin-top:16px" class="mut">+ 유효일자 충돌 시 최신본 우선 · LLM/임베딩은 사내 게이트웨이만 사용</p>
+</section>
+
+<!-- 4 ARCHITECTURE (SVG) -->
+<section class="slide">
+  <h2>아키텍처 개요</h2>
+  <div style="display:flex;justify-content:center">
+  <svg viewBox="0 0 980 560" style="width:100%;height:auto;max-height:76vh" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <marker id="aB" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#3b5bdb"/></marker>
+      <marker id="aG" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#0c8a4e"/></marker>
+      <marker id="aO" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#c2410c"/></marker>
+      <marker id="aK" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#8190b5"/></marker>
+      <style>
+        .ttl{font:700 15px 'Apple SD Gothic Neo',sans-serif}
+        .lbl{font:600 13px sans-serif;fill:#2b3344}.sm{font:500 11px sans-serif;fill:#6b7280}
+        .chip{font:700 12px 'Apple SD Gothic Neo',sans-serif;fill:#161b26}
+        .elbl{font:700 11px sans-serif}
+        .lB{stroke:#3b5bdb;stroke-width:1.8;fill:none;marker-end:url(#aB)}
+        .lG{stroke:#0c8a4e;stroke-width:1.8;fill:none;marker-end:url(#aG)}
+        .lO{stroke:#c2410c;stroke-width:1.8;fill:none;marker-end:url(#aO)}
+        .lK{stroke:#8190b5;stroke-width:1.6;fill:none;marker-end:url(#aK)}
+        .dash{stroke-dasharray:5 4}
+      </style>
+    </defs>
+    <rect x="300" y="12" width="380" height="50" rx="12" fill="#eef2ff" stroke="#3b5bdb"/>
+    <text x="490" y="34" text-anchor="middle" class="lbl">Frontend (FastAPI 서빙 / Next.js)</text>
+    <text x="490" y="51" text-anchor="middle" class="sm">채팅 · 처리과정 트레이스 · 답변근거(청크/graphify)</text>
+    <line class="lK" x1="490" y1="62" x2="490" y2="96"/><text x="498" y="84" class="sm">REST / SSE</text>
+    <rect x="30" y="98" width="920" height="150" rx="14" fill="#f7f9ff" stroke="#c9d4f5"/>
+    <text x="46" y="122" class="ttl" style="fill:#1f3bb3">질의 파이프라인 (FastAPI)</text>
+    <g>
+      <rect x="44"  y="148" width="110" height="66" rx="9" fill="#fff" stroke="#dfe3ee"/><text x="99"  y="177" text-anchor="middle" class="chip">①라우팅</text><text x="99" y="195" text-anchor="middle" class="sm">수치/설명</text>
+      <rect x="172" y="148" width="110" height="66" rx="9" fill="#fff" stroke="#dfe3ee"/><text x="227" y="177" text-anchor="middle" class="chip">②쿼리확장</text><text x="227" y="195" text-anchor="middle" class="sm">동의어</text>
+      <rect x="300" y="148" width="110" height="66" rx="9" fill="#e8f6ee" stroke="#0c8a4e"/><text x="355" y="177" text-anchor="middle" class="chip">③테이블조회</text><text x="355" y="195" text-anchor="middle" class="sm">정밀수치</text>
+      <rect x="428" y="148" width="110" height="66" rx="9" fill="#eef2ff" stroke="#3b5bdb"/><text x="483" y="177" text-anchor="middle" class="chip">④벡터검색</text><text x="483" y="195" text-anchor="middle" class="sm">의미매칭</text>
+      <rect x="556" y="148" width="110" height="66" rx="9" fill="#eef2ff" stroke="#3b5bdb"/><text x="611" y="177" text-anchor="middle" class="chip">⑤그래프탐색</text><text x="611" y="195" text-anchor="middle" class="sm">관계확장</text>
+      <rect x="684" y="148" width="110" height="66" rx="9" fill="#fff" stroke="#dfe3ee"/><text x="739" y="177" text-anchor="middle" class="chip">⑥재랭킹</text><text x="739" y="195" text-anchor="middle" class="sm">출처부착</text>
+      <rect x="812" y="148" width="120" height="66" rx="9" fill="#fff" stroke="#dfe3ee"/><text x="872" y="177" text-anchor="middle" class="chip">⑦생성</text><text x="872" y="195" text-anchor="middle" class="sm">근거/모름</text>
+      <text x="160" y="185" class="sm">›</text><text x="288" y="185" class="sm">›</text><text x="416" y="185" class="sm">›</text><text x="544" y="185" class="sm">›</text><text x="672" y="185" class="sm">›</text><text x="800" y="185" class="sm">›</text>
+    </g>
+    <rect x="30" y="330" width="540" height="150" rx="14" fill="#f3faf5" stroke="#bfe3cd"/>
+    <text x="46" y="354" class="ttl" style="fill:#0c8a4e">인덱스 저장소</text>
+    <rect x="300" y="366" width="110" height="94" rx="9" fill="#fff" stroke="#0c8a4e"/><text x="355" y="404" text-anchor="middle" class="chip">tables.db</text><text x="355" y="422" text-anchor="middle" class="sm">SQLite · 수치</text>
+    <rect x="428" y="366" width="110" height="94" rx="9" fill="#fff" stroke="#3b5bdb"/><text x="483" y="404" text-anchor="middle" class="chip">Qdrant</text><text x="483" y="422" text-anchor="middle" class="sm">벡터 4096d</text>
+    <rect x="44" y="366" width="130" height="94" rx="9" fill="#fff" stroke="#3b5bdb"/><text x="109" y="398" text-anchor="middle" class="chip">graph.json</text><text x="109" y="416" text-anchor="middle" class="sm">NetworkX</text><text x="109" y="432" text-anchor="middle" class="sm">(graphify)</text>
+    <rect x="588" y="330" width="362" height="150" rx="14" fill="#fdf3ee" stroke="#f0cdb4"/>
+    <text x="604" y="354" class="ttl" style="fill:#c2410c">사내 게이트웨이</text>
+    <rect x="600" y="366" width="108" height="94" rx="9" fill="#fff" stroke="#c2410c"/><text x="654" y="398" text-anchor="middle" class="chip">Octen-8B</text><text x="654" y="416" text-anchor="middle" class="sm">임베딩</text>
+    <rect x="716" y="366" width="110" height="94" rx="9" fill="#fff" stroke="#c2410c"/><text x="771" y="398" text-anchor="middle" class="chip">HCX-30B</text><text x="771" y="416" text-anchor="middle" class="sm">hcx-agent-05·답변</text>
+    <rect x="834" y="366" width="106" height="94" rx="9" fill="#fff" stroke="#f0cdb4"/><text x="887" y="398" text-anchor="middle" class="chip">Qwen3.6</text><text x="887" y="416" text-anchor="middle" class="sm">폴백</text>
+    <line class="lG" x1="355" y1="214" x2="355" y2="364"/><text x="360" y="296" class="elbl" style="fill:#0c8a4e">③ 조회</text>
+    <line class="lB" x1="483" y1="214" x2="483" y2="364"/><text x="488" y="296" class="elbl" style="fill:#3b5bdb">④ 검색</text>
+    <line class="lB" x1="600" y1="214" x2="140" y2="364"/><text x="250" y="300" class="elbl" style="fill:#3b5bdb">⑤ 탐색</text>
+    <line class="lO dash" x1="455" y1="214" x2="650" y2="364"/><text x="600" y="300" class="elbl" style="fill:#c2410c">④ 임베딩</text>
+    <line class="lO" x1="860" y1="214" x2="780" y2="364"/><text x="828" y="300" class="elbl" style="fill:#c2410c">⑦ 생성</text>
+    <line class="lO dash" x1="884" y1="214" x2="887" y2="364"/><text x="892" y="300" class="elbl" style="fill:#c2410c">폴백</text>
+    <rect x="30" y="500" width="920" height="46" rx="10" fill="#f3f5f9" stroke="#dfe3ee"/>
+    <text x="50" y="528" class="lbl">오프라인 인덱싱: <tspan class="sm">파싱(doc·pdf·md·xlsx·img) → 청킹 → 임베딩/적재 → 표 추출 → 그래프 매핑</tspan></text>
+    <line class="lK" x1="780" y1="500" x2="780" y2="482"/><text x="700" y="496" class="sm">월별 재인덱싱 →</text>
+  </svg>
+  </div>
+</section>
+
+<!-- 5 WHY NOT NEO4J -->
+<section class="slide">
+  <div class="tag">설계 결정 (ADR-001 / 006)</div>
+  <h2>왜 Neo4j 대신 Qdrant + graphify인가</h2>
+  <div class="grid g2">
+    <div class="card"><h3>Neo4j (풀 그래프 DB)</h3><ul>
+      <li>수백만 노드·복잡한 다중홉 Cypher에 강점</li>
+      <li class="warn">별도 DB 서버 운영(메모리·백업·인프라 승인)</li>
+      <li class="warn">단일 공유 그래프DB → 재인덱싱·동시쓰기 시 <b>공유DB 충돌</b>(락)</li>
+      <li class="warn">현 데이터(57노드)엔 <b>과잉</b> — 속도 이점 0</li></ul></div>
+    <div class="card lb"><h3 class="ok">선택 — Qdrant + NetworkX + graphify</h3><ul>
+      <li>graphify가 만든 <b>graph.json</b>을 메모리 로드 → 즉시 활용</li>
+      <li>수치=SQLite · 의미=Qdrant · 관계=NetworkX <b>분업</b></li>
+      <li>운영 단순·경량, 사내 인프라 부담 최소</li>
+      <li class="mut">확장 트리거: 노드&gt;2만 또는 멀티홉 지연 시 Neo4j/AGE 재검토</li></ul></div>
+  </div>
+</section>
+
+<!-- 6 GRAPHIFY STRUCTURE -->
+<section class="slide">
+  <div class="tag">graphify 구조</div>
+  <h2>스키마 & 청킹</h2>
+  <div class="grid g2">
+    <div class="card lb"><h3>graph.json (NetworkX node-link)</h3><ul>
+      <li><b>nodes</b>: label · file_type(document/concept) · source_file · community</li>
+      <li><b>links</b>: relation(references / semantically_similar_to) · confidence(EXTRACTED/INFERRED)</li>
+      <li><b>hyperedges</b> · 커뮤니티 9 · God node · betweenness</li></ul>
+      <p style="margin-top:6px"><span class="pill">57 노드</span><span class="pill">66 엣지</span><span class="pill">추출 85% EXTRACTED</span></p></div>
+    <div class="card"><h3>청킹 (구조 보존)</h3><ul>
+      <li><b>FAQ</b>: 질문-답변 1쌍 = 1청크</li>
+      <li><b>규정·운영기준</b>: 조항·표 단위, 헤더 반복 부착</li>
+      <li>메타: source_file·doc_type·상품·유효일자·위치</li>
+      <li><b>노드↔청크 매핑</b> → 그래프 결과를 <span class="hl">원문 근거로 환원</span></li></ul></div>
+  </div>
+  <p style="margin-top:12px" class="mut">→ graphify는 <b>오프라인 그래프 빌드</b>에만 사용, 서빙은 자체 하이브리드 엔진이 담당</p>
+</section>
+
+<!-- 7 HYBRID PIPELINE -->
+<section class="slide">
+  <div class="tag">핵심 ① 하이브리드 검색</div>
+  <h2>질의 처리 파이프라인 — 라우팅으로 3경로 조합</h2>
+  <div class="flow">
+    <div class="step"><b>①라우팅</b><small>수치/설명</small></div><div class="arrow">→</div>
+    <div class="step"><b>②쿼리확장</b><small>동의어·유사어</small></div><div class="arrow">→</div>
+    <div class="step" style="border-top-color:var(--grn)"><b>③테이블조회</b><small>SQLite 정밀수치</small></div><div class="arrow">→</div>
+    <div class="step" style="border-top-color:var(--blue2)"><b>④벡터검색</b><small>Qdrant 의미</small></div><div class="arrow">→</div>
+    <div class="step" style="border-top-color:var(--blue2)"><b>⑤그래프탐색</b><small>NetworkX 관계</small></div><div class="arrow">→</div>
+    <div class="step"><b>⑥재랭킹</b><small>테이블 우선</small></div><div class="arrow">→</div>
+    <div class="step"><b>⑦생성</b><small>근거/모름</small></div>
+  </div>
+  <div class="grid g3" style="margin-top:18px">
+    <div class="card"><h3 class="ok">수치형</h3><p>③ 테이블로 <b>정확값</b> → 환각 0 · 생성 0ms<br>(예: 금리등급 2 → 21.0%)</p></div>
+    <div class="card"><h3>설명형 — 그래프RAG 한계 보완</h3><p>그래프·키워드만으론 <b class="warn">의미기반 검색 불가</b> → ④ 벡터로 의미 시작점 → ⑤ 그래프로 확장</p></div>
+    <div class="card"><h3>모름</h3><p>어휘 중첩·근거 없으면 "규정에 명시되어 있지 않습니다"</p></div>
+  </div>
+</section>
+
+<!-- 8 STRUCTURED TABLES -->
+<section class="slide">
+  <div class="tag">핵심 ② 수치 환각 방지</div>
+  <h2>구조화 테이블(SQLite) = 정답의 단일 출처</h2>
+  <div class="grid g2">
+    <div>
+      <ul>
+        <li>운영기준의 금리·조건을 <b>텍스트가 아닌 구조화 데이터</b>로 추출(병합 셀 처리)</li>
+        <li>LLM이 숫자를 만들지 않고 <b>행에서 직접 조회</b> → 환각 원천 차단</li>
+        <li>source 전 문서를 훑어 누락·오류를 반영(NICE 등급표 실제값 교체 포함)</li>
+      </ul>
+      <p style="margin-top:8px">
+        <span class="pill">rate_grade 45</span><span class="pill">nego_rule 36</span>
+        <span class="pill">condition_rule 51</span><span class="pill">잔가군 70</span><span class="pill">nice_band 9</span></p>
+    </div>
+    <div class="card">
+      <h3>커버 범위</h3>
+      <p class="mut" style="line-height:1.7">중고승용(등급별 GL·네고·연체·중도상환·슬라이딩·판촉·프로모션) · 중고리스(금융리스금리·IRR·잔가군) · 재고금융(대상·채권·연체) · 중형트럭(톤수·설정율·주행) · 심사(한도·연식·카히스토리) · 법인 적용금리</p>
+    </div>
+  </div>
+</section>
+
+<!-- 9 QUERY TRACE EXAMPLE -->
+<section class="slide">
+  <div class="tag">실측 예시</div>
+  <h2>한 질의가 답이 되기까지</h2>
+  <div class="card" style="border-left:4px solid var(--blue2);margin-bottom:10px"><span class="mut">Q.</span> 금리등급 2등급일 때 적용될 수 있는 최저 금리가 궁금해</div>
+  <div class="flow" style="margin-top:0">
+    <div class="step"><b>①라우팅</b><small>numeric · 0ms</small></div><div class="arrow">→</div>
+    <div class="step"><b>②확장</b><small>동의어4 · 0ms</small></div><div class="arrow">→</div>
+    <div class="step" style="border-top-color:var(--grn)"><b>③테이블</b><small class="ok">21.0% 확정 · 0.9ms ★</small></div><div class="arrow">→</div>
+    <div class="step" style="border-top-color:var(--blue2)"><b>④벡터</b><small style="color:var(--blue2)">근거 5 · 560ms</small></div><div class="arrow">→</div>
+    <div class="step"><b>⑤그래프</b><small>노드5 · 1ms</small></div><div class="arrow">→</div>
+    <div class="step"><b>⑥⑦</b><small>table·high · 0ms</small></div>
+  </div>
+  <div class="grid g2" style="margin-top:14px">
+    <div class="card"><h3 class="ok">A. (mode=table)</h3><p>금리등급 2등급시 <b>21.0%</b> G/L금리이며 내국인 네고 1%(N1) 적용됩니다. 추가로 거점장 <b>11.0%</b>, 증빙 15.0%, HJ 18.0%.</p><p style="margin-top:4px"><span class="pill">📄 중고승용 운영기준 · 2026-03</span></p></div>
+    <div class="card"><h3>왜 빠른가 = 왜 정확한가</h3><p>수치형은 <b>테이블 직조회</b>라 생성 0ms·환각 0. 벡터·그래프(④⑤)는 답이 아니라 <b>근거 표시</b>용, 지연 대부분은 임베딩 호출.</p></div>
+  </div>
+</section>
+
+<!-- 10 JUDGMENT -->
+<section class="slide">
+  <div class="tag">사실 조회를 넘어 — 판정</div>
+  <h2>조건 대조 후 가능/불가 판정</h2>
+  <div class="card" style="border-left:4px solid var(--blue2);margin-bottom:10px"><span class="mut">Q.</span> 나이스 955점, KCB 800점인데 프로모션 사용 가능해?</div>
+  <div class="grid g2">
+    <div class="card"><h3 class="warn">A. 아니요, 불가능합니다</h3><p>프로모션 G/L 7.6%는 금리등급 1등급 & NICE 933↑ & KCB 976↑ 세 조건을 모두 충족해야 적용됩니다(법인 제외).<br><b>입력값 — NICE 955(충족), KCB 800(미충족·976 이상 필요)</b></p></div>
+    <div class="card"><h3>동작</h3><ul>
+      <li>질의에서 NICE·KCB 점수 <b>파싱</b></li>
+      <li>기준값(933·976)은 <b>tables.db에서 자동 추출</b>(하드코딩 X)</li>
+      <li>조건별 충족/미충족 판정 + 근거 제시</li></ul>
+      <p class="mut" style="margin-top:4px">법인·프로모션·네고 등도 동일 방식으로 판정/조회</p></div>
+  </div>
+</section>
+
+<!-- 11 DEMO 3-pane -->
+<section class="slide">
+  <div class="tag">핵심 ③ 데모 화면</div>
+  <h2>중앙 채팅 · 처리과정 트레이스 · 답변 근거</h2>
+  <div class="mock">
+    <div class="mc"><div class="mhead">💬 채팅</div><div class="mbody">
+      <div class="bubble bu">금리등급 2등급 최저금리 알려줘</div>
+      <div class="bubble ba">금리등급 2등급시 <b>21.0%</b> G/L금리이며 …<br><span class="echip">📄 중고승용 · 2026-03</span><br><small class="mut">numeric · table · high</small></div>
+    </div></div>
+    <div class="mp"><div class="mhead">🔎 처리 과정</div><div class="mbody">
+      <div class="tstep"><div class="th"><span>1 라우팅</span><span class="ms">0ms</span></div>numeric</div>
+      <div class="tstep"><div class="th"><span>3 테이블</span><span class="ms">0.9ms</span></div>매칭 → 확정</div>
+      <div class="tstep"><div class="th"><span>4 벡터</span><span class="ms">560ms</span></div>상위 5청크</div>
+      <div class="tstep"><div class="th"><span>5 그래프</span><span class="ms">1ms</span></div>관련 노드 5</div>
+    </div></div>
+    <div class="mp"><div class="mhead">📄 답변 근거</div><div class="mbody">
+      <div style="font-size:11px;color:#888">▍청크</div>
+      <div class="tstep">중고승용 금리표 청크 · 유사도 0.71 …</div>
+      <div style="font-size:11px;color:#888;margin-top:4px">▍graphify 노드</div>
+      <span class="echip">🔗 금리등급/G-L금리/NEGO</span><span class="echip">🔗 중고승용차 구입대출</span>
+    </div></div>
+  </div>
+  <p style="margin-top:8px" class="mut">→ 답이 빨라도 <b>벡터·그래프가 실제로 동작</b>함을 시간·근거로 확인. 신뢰·디버깅 용이.</p>
+</section>
+
+<!-- 12 STACK -->
+<section class="slide">
+  <h2>기술 스택</h2>
+  <div class="grid g4">
+    <div class="card"><div class="k">답변 LLM</div><div class="v" style="font-size:19px">HCX-30B<br>hcx-agent-05</div></div>
+    <div class="card"><div class="k">폴백 LLM</div><div class="v" style="font-size:19px">Qwen3.6<br>35B</div></div>
+    <div class="card"><div class="k">임베딩</div><div class="v" style="font-size:19px">Octen-8B<br>4096d</div></div>
+    <div class="card"><div class="k">게이트웨이</div><div class="v" style="font-size:16px">사내<br>(namc-aigw)</div></div>
+    <div class="card"><div class="k">벡터DB</div><div class="v" style="font-size:22px">Qdrant</div></div>
+    <div class="card"><div class="k">그래프</div><div class="v" style="font-size:22px">NetworkX</div></div>
+    <div class="card"><div class="k">수치</div><div class="v" style="font-size:20px">SQLite<br>tables.db</div></div>
+    <div class="card"><div class="k">API/UI</div><div class="v" style="font-size:19px">FastAPI<br>Next.js</div></div>
+  </div>
+  <p style="margin-top:14px" class="mut">키는 .env 로만 관리(코드/커밋 노출 없음) · 외부 모델 금지 · 게이트웨이 미연결 시 결정적 폴백으로 오프라인 개발</p>
+</section>
+
+<!-- 13 METHODOLOGY -->
+<section class="slide">
+  <div class="tag">개발 방법론</div>
+  <h2>하네스 기반 실행 + 반복 개선 + 회귀 게이트</h2>
+  <div class="grid g2">
+    <div><ul>
+      <li><b>헌법</b>(CLAUDE.md)+docs = 단일 진실원, <b>phase 0~5</b> 순차 실행·핸드오프 게이트</li>
+      <li>변경마다 <b>hooks 자동검증</b>(문법·시크릿·테스트)</li>
+      <li><b>3회 반복 루프</b>: 실행→검증→플랜 보완(PLAN_CHANGELOG 누적)</li>
+    </ul></div>
+    <div class="card lb"><h3>A/B 회귀 + CI 게이트</h3>
+      <p>골든셋 결과를 <b>baseline</b>과 비교해 개선/회귀 자동 포착. <b>CI 게이트</b>: 수치정확도 100%·정확도≥95%·출처율 100% 미달 시 차단.</p>
+      <p class="mut" style="margin-top:6px">루프가 실제 잡은 버그: pytest 경로, 폴백 임베딩 한계, 상품 교차매칭, NICE 등급표 오류 → 자가수정</p></div>
+  </div>
+</section>
+
+<!-- 13b POLICY MODULES -->
+<section class="slide">
+  <div class="tag">유지보수성</div>
+  <h2>정책·표현의 중앙 관리 — prompts / templates 모듈</h2>
+  <div class="grid g2">
+    <div class="card lb"><h3>app/prompts.py — 프롬프트·컨텍스트 정책</h3><ul>
+      <li>시스템 프롬프트(상담사 톤 · 근거만 · 출처 · 모르면 모른다)</li>
+      <li>답변 스타일 4종(table / llm / context_only / none)</li>
+      <li>컨텍스트 캡(건수·길이), 저점수 근거 컷, 어휘 관련성 게이트</li>
+      <li>원칙: 수치=구조화 1차 · 설명=원문 보조</li></ul></div>
+    <div class="card lb"><h3>app/templates.py — 표현·문장 템플릿</h3><ul>
+      <li>표기 정책: 고객유형 미지정 처리 · 최저금리 산술 금지 · 개월/출처 포맷</li>
+      <li>문장 템플릿: 금리·네고·프로모션(판정)·조건·근거요약</li>
+      <li>네고 필터·출처 배지 등 표현 일원화</li></ul></div>
+  </div>
+  <p style="margin-top:14px"><span class="hl">코드 로직을 건드리지 않고</span> 상수·템플릿 한 줄로 톤·정책 변경 → 리뷰·A/B 용이. <span class="mut">generator·tables_lookup 은 이 모듈만 참조.</span></p>
+</section>
+
+<!-- 14 RESULTS -->
+<section class="slide">
+  <div class="tag">성과 / 검증</div>
+  <h2>검증 결과</h2>
+  <div class="grid g4">
+    <div class="card"><div class="k">골든셋 정확도</div><div class="v">100%</div><div class="mut">65 / 65 문항</div></div>
+    <div class="card"><div class="k">수치형 정확도</div><div class="v">100%</div><div class="mut">환각 0</div></div>
+    <div class="card"><div class="k">출처 첨부율</div><div class="v">100%</div><div class="mut">전 답변</div></div>
+    <div class="card"><div class="k">게이트웨이 실연결</div><div class="v">3/3</div><div class="mut">Octen·HCX·Qwen</div></div>
+  </div>
+  <div class="grid g3" style="margin-top:14px">
+    <div class="card"><h3>실데이터</h3><p>Qdrant <b>woori_auto</b>에 실제 Octen 4096d 벡터 <b>252점</b> 적재</p></div>
+    <div class="card"><h3>테스트</h3><p>pytest <b>28 통과</b> · CI 게이트 PASS · A/B 회귀 0</p></div>
+    <div class="card"><h3>범위</h3><p>phase 0~5 완료 · 4개 상품 + 프로모션·법인·심사</p></div>
+  </div>
+</section>
+
+<!-- 15 PRODUCTION -->
+<section class="slide">
+  <h2>운영 전환 현황</h2>
+  <div class="grid g2">
+    <div class="card lb"><h3 class="ok">구현 완료</h3><ul>
+      <li>질의·답변 <b>로깅 + 통계 대시보드</b>(/dashboard)</li>
+      <li><b>자동 재인덱싱 스케줄러</b> — 회귀 게이트 통과 시만 반영 + 버전 이력</li>
+      <li><b>CI 회귀 게이트 + A/B</b> 하네스</li></ul></div>
+    <div class="card"><h3 class="warn">문서화 후 보류 (사내 사양 의존)</h3><ul>
+      <li>운영 인프라·시크릿 볼트·모니터링</li>
+      <li>사내 <b>SSO</b> 인증·접근제어</li>
+      <li>보안·컴플라이언스(PII·감사)</li></ul>
+      <p class="mut" style="margin-top:4px">→ docs/PRODUCTION_TRANSITION.md</p></div>
+  </div>
+</section>
+
+<!-- 16 CLOSING -->
+<section class="slide center">
+  <h2 style="color:var(--ink)">요약 & 다음 단계</h2>
+  <p class="sub" style="max-width:800px">근거·출처가 명확하고 <b>수치 환각이 없는</b> 하이브리드 상담챗봇.<br>실데이터·실게이트웨이(HCX-30B)로 검증 완료, 운영 기능 일부 구현.</p>
+  <div class="grid g3" style="margin-top:22px;width:100%;max-width:920px">
+    <div class="card"><h3>① 데이터</h3><p class="mut">실 상담 로그로 골든셋 확대 · 잔가군 트림 정밀화</p></div>
+    <div class="card"><h3>② 품질</h3><p class="mut">실 임베딩 재인덱싱으로 설명형 정밀도 · 대시보드 개선 루프</p></div>
+    <div class="card"><h3>③ 운영</h3><p class="mut">SSO·인프라·보안 + 월별 자동 재인덱싱 정착</p></div>
+  </div>
+  <p style="margin-top:26px" class="mut">감사합니다 · <span class="kbd">←</span> <span class="kbd">→</span> 이동 · <span class="kbd">F</span> 전체화면</p>
+</section>
+
+</div>
+<div class="progress" id="bar"></div>
+<div class="foot"><div>우리캐피탈 오토운영팀 상담챗봇</div><div class="dots" id="dots"></div><div><span id="num">1</span> / <span id="tot">16</span></div></div>
+<script>
+const slides=[...document.querySelectorAll('.slide')];let i=0;const tot=slides.length;
+document.getElementById('tot').textContent=tot;
+const dotsEl=document.getElementById('dots');
+slides.forEach((_,k)=>{const d=document.createElement('div');d.className='dot'+(k===0?' on':'');d.onclick=()=>go(k);dotsEl.appendChild(d);});
+const dots=[...dotsEl.children];
+function go(n){i=Math.max(0,Math.min(tot-1,n));slides.forEach((s,k)=>s.classList.toggle('active',k===i));dots.forEach((d,k)=>d.classList.toggle('on',k===i));document.getElementById('num').textContent=i+1;document.getElementById('bar').style.width=((i+1)/tot*100)+'%';}
+document.addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();go(i+1);}else if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();go(i-1);}else if(e.key==='Home')go(0);else if(e.key==='End')go(tot-1);else if(e.key==='f'||e.key==='F'){document.documentElement.requestFullscreen?.();}});
+let sx=0;document.addEventListener('touchstart',e=>sx=e.touches[0].clientX);document.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>50)go(i+(dx<0?1:-1));});
+go(0);
+</script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+{
+  "max_iterations": 3,
+  "iteration": 3,
+  "phase_index": 5,
+  "phase_order": [
+    "phase_0",
+    "phase_1",
+    "phase_2",
+    "phase_3",
+    "phase_4"
+  ],
+  "step": "iteration_reflect",
+  "status": "done",
+  "history": [
+    {
+      "ts": "2026-06-28T15:32:30.787226+00:00",
+      "iteration": 1,
+      "phase": "phase_0",
+      "event": "verify",
+      "passed": false,
+      "findings": [
+        "pytest: ap._gcd_import(name[level:], package, level)\ntests/test_gateway_smoke.py:10: in <module>\n    from app.config import get_settings\nE   ModuleNotFoundError: No module named 'app'\n=============================== warnings summary ===============================\n../../.local/lib/python3.10/site-packages/fastapi/testclient.py:1\n  /sessions/vibrant-relaxed-dijkstra/.local/lib/python3.10/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=========================== short test summary info ============================\nERROR tests/test_gateway_smoke.py\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 warning, 1 error in 0.13s"
+      ]
+    },
+    {
+      "ts": "2026-06-28T15:32:52.000918+00:00",
+      "iteration": 1,
+      "phase": "phase_0",
+      "event": "improve",
+      "note": "verify.py 의 pytest 실행 환경에서 'No module named app' 발생(루트가 sys.path 에 없음). pyproject.toml [tool.pytest.ini_options] pythonpath=['.'] 추가로 해결. 플랜 보완: Phase0 Outputs 에 pyproject.toml 추가 권고."
+    },
+    {
+      "ts": "2026-06-28T15:32:52.249630+00:00",
+      "iteration": 1,
+      "phase": "phase_0",
+      "event": "verify",
+      "passed": true,
+      "findings": []
+    },
+    {
+      "ts": "2026-06-28T15:35:53.915063+00:00",
+      "iteration": 1,
+      "phase": "phase_1",
+      "event": "verify",
+      "passed": true,
+      "findings": []
+    },
+    {
+      "ts": "2026-06-28T15:39:36.262750+00:00",
+      "iteration": 1,
+      "phase": "phase_2",
+      "event": "verify",
+      "passed": true,
+      "findings": []
+    },
+    {
+      "ts": "2026-06-28T15:40:43.128541+00:00",
+      "iteration": 1,
+      "phase": "phase_3",
+      "event": "verify",
+      "passed": true,
+      "findings": []
+    },
+    {
+      "ts": "2026-06-28T15:41:49.960452+00:00",
+      "iteration": 1,
+      "phase": "phase_4",
+      "event": "verify",
+      "passed": true,
+      "findings": []
+    },
+    {
+      "ts": "2026-06-28T15:42:11.876332+00:00",
+      "iteration": 1,
+      "phase": "ALL",
+      "event": "iteration_reflect",
+      "note": "iter1 회고: 5개 예시+변형 전부 정확(수치 100%/출처 100%). 잔존 개선점 → (1) 외국인 구간별(12/24/36/48개월) GL표 미추출, (2) 벡터검색이 폴백 임베딩이라 설명형 약함, (3) 골든셋 10문항으로 작음. iter2 개선계획: 외국인 구간 금리표 추출+회귀테스트 추가. iter3: 골든셋 확장 + 근거없음 처리 강화."
+    },
+    {
+      "ts": "2026-06-28T15:42:57.693126+00:00",
+      "iteration": 2,
+      "phase": "phase_0",
+      "event": "verify",
+      "passed": true,
+      "findings": []
+    },
+    {
+      "ts": "2026-06-28T15:42:57.707309+00:00",
+      "iteration": 2,
+      "phase": "phase_1",
+      "event": "improve",
+      "note": "iter2 개선 구현: 외국인 구간별(12/24/36/48개월) GL 금리표 추출 추가(pipeline/extract_tables.extract_suseung_foreigner) + 회귀테스트(외국인 등급2·36개월=39.0%). tables.db rate_grade +36행."
+    },
+    {
+      "ts": "2026-06-28T15:43:00.531216+00:00",
+      "iteration": 2,
+      "phase": "phase_1",
+      "event": "verify",
+      "passed": true,
+      "findings": []
+    },
+    {
+      "ts": "2026-06-28T15:43:02.098199+00:00",
+      "iteration": 2,
+      "phase": "phase_2",
+      "event": "verify",
+      "passed": true,
+      "findings": []
+    },
+    {
+      "ts": "2026-06-28T15:43:06.156038+00:00",
+      "iteration": 2,
+      "phase": "phase_3",
+      "event": "verify",
+      "passed": true,
+      "findings": []
+    },
+    {
+      "ts": "2026-06-28T15:43:10.126982+00:00",
+      "iteration": 2,
+      "phase": "phase_4",
+      "event": "verify",
+      "passed": true,
+      "findings": []
+    },
+    {
+      "ts": "2026-06-28T15:43:23.179304+00:00",
+      "iteration": 2,
+      "phase": "ALL",
+      "event": "iteration_reflect",
+      "note": "iter2 회고: 외국인 구간 금리표 추출 추가로 수치 커버리지 확대(rate_grade 9→45행), 전 phase 검증 통과, eval 100% 유지. iter3 개선계획: (1) 근거 유사도 임계값 미만이면 무관 컨텍스트 대신 '규정에 명시되어 있지 않습니다' 반환(환각/오답 방지 강화), (2) 골든셋에 무관질의·경계질의 추가."
+    },
+    {
+      "ts": "2026-06-28T15:45:19.274114+00:00",
+      "iteration": 3,
+      "phase": "phase_0",
+      "event": "verify",
+      "passed": true,
+      "findings": []
+    },
+    {
+      "ts": "2026-06-28T15:45:22.080470+00:00",
+      "iteration": 3,
+      "phase": "phase_1",
+      "event": "verify",
+      "passed": true,
+      "findings": []
+    },
+    {
+      "ts": "2026-06-28T15:45:22.094796+00:00",
+      "iteration": 3,
+      "phase": "phase_2",
+      "event": "improve",
+      "note": "iter3 개선 구현: (1) 무관 질의 처리 강화 — 폴백 임베딩 코사인이 무관/관련 질의 모두 0.3~0.4로 분리 불가함을 발견. 코사인 임계 대신 어휘중첩 게이트(_lexical_relevant)로 교체해 무관 질의는 '규정에 명시되어 있지 않습니다' 반환. (2) 금리 조회 구간(개월) 인식 추가. (3) 골든셋 12문항으로 확장(무관2+외국인구간1). eval 12/12 100%."
+    },
+    {
+      "ts": "2026-06-28T15:45:23.627917+00:00",
+      "iteration": 3,
+      "phase": "phase_2",
+      "event": "verify",
+      "passed": true,
+      "findings": []
+    },
+    {
+      "ts": "2026-06-28T15:45:27.540035+00:00",
+      "iteration": 3,
+      "phase": "phase_3",
+      "event": "verify",
+      "passed": true,
+      "findings": []
+    },
+    {
+      "ts": "2026-06-28T15:45:31.602376+00:00",
+      "iteration": 3,
+      "phase": "phase_4",
+      "event": "verify",
+      "passed": true,
+      "findings": []
+    },
+    {
+      "ts": "2026-06-28T15:45:31.617111+00:00",
+      "iteration": 3,
+      "phase": "ALL",
+      "event": "iteration_reflect",
+      "note": "iter3 회고: 환각/오답 방지 강화(무관질의 차단), 금리 구간 조회, 골든셋 확장 완료. 전 phase 검증 통과, eval 12/12(100%), 수치 100%, 출처 100%. MVP 목표 충족. 다음(범위 외): 실제 게이트웨이 연결 재인덱싱, 타 상품 표 확장, SSO/로깅/스케줄러 운영전환."
+    }
+  ],
+  "created_at": "2026-06-28T15:12:16.608674+00:00",
+  "updated_at": "2026-06-28T15:45:31.617115+00:00"
+}

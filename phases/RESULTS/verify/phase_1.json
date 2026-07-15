@@ -1,0 +1,32 @@
+{
+  "phase": "phase_1",
+  "iteration": 0,
+  "passed": true,
+  "checks": [
+    {
+      "name": "outputs_exist",
+      "ok": true,
+      "detail": "선언 산출물 7개 모두 존재",
+      "blocking": true
+    },
+    {
+      "name": "pytest",
+      "ok": true,
+      "detail": ".......                                                                  [100%]\n7 passed in 3.96s",
+      "blocking": true
+    },
+    {
+      "name": "rate_grade_sample",
+      "ok": true,
+      "detail": "내국인 등급2 GL금리=21.0% (기대 21.0%)",
+      "blocking": true
+    },
+    {
+      "name": "node_chunk_map",
+      "ok": true,
+      "detail": "노드↔청크 매핑 존재",
+      "blocking": true
+    }
+  ],
+  "findings": []
+}

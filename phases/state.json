@@ -1,0 +1,212 @@
+{
+  "current_phase": null,
+  "phases": [
+    {
+      "id": "phase_0",
+      "num": 0,
+      "file": "phase_0_setup.md",
+      "status": "completed",
+      "started_at": "2026-06-28T15:31:00.642566+00:00",
+      "completed_at": "2026-06-28T15:32:30.521505+00:00",
+      "artifacts": [
+        {
+          "path": "app/main.py",
+          "exists": true
+        },
+        {
+          "path": "app/gateway/client.py",
+          "exists": true
+        },
+        {
+          "path": ".env.example",
+          "exists": true
+        },
+        {
+          "path": "docker-compose.yml",
+          "exists": true
+        },
+        {
+          "path": "requirements.txt",
+          "exists": true
+        },
+        {
+          "path": "tests/test_gateway_smoke.py",
+          "exists": true
+        }
+      ],
+      "results_doc": "phases/RESULTS/phase_0.md"
+    },
+    {
+      "id": "phase_1",
+      "num": 1,
+      "file": "phase_1_indexing.md",
+      "status": "completed",
+      "started_at": "2026-06-28T15:33:23.272898+00:00",
+      "completed_at": "2026-06-28T15:35:51.495408+00:00",
+      "artifacts": [
+        {
+          "path": "pipeline/parse.py",
+          "exists": true
+        },
+        {
+          "path": "pipeline/chunk.py",
+          "exists": true
+        },
+        {
+          "path": "pipeline/embed_index.py",
+          "exists": true
+        },
+        {
+          "path": "pipeline/extract_tables.py",
+          "exists": true
+        },
+        {
+          "path": "data/tables.db",
+          "exists": true
+        },
+        {
+          "path": "data/node_chunk_map.json",
+          "exists": true
+        },
+        {
+          "path": "tests/test_indexing.py",
+          "exists": true
+        }
+      ],
+      "results_doc": "phases/RESULTS/phase_1.md"
+    },
+    {
+      "id": "phase_2",
+      "num": 2,
+      "file": "phase_2_query_engine.md",
+      "status": "completed",
+      "started_at": "2026-06-28T15:36:45.242759+00:00",
+      "completed_at": "2026-06-28T15:39:34.736698+00:00",
+      "artifacts": [
+        {
+          "path": "app/router.py",
+          "exists": true
+        },
+        {
+          "path": "app/expander.py",
+          "exists": true
+        },
+        {
+          "path": "app/retriever.py",
+          "exists": true
+        },
+        {
+          "path": "app/tables_lookup.py",
+          "exists": true
+        },
+        {
+          "path": "app/reranker.py",
+          "exists": true
+        },
+        {
+          "path": "app/generator.py",
+          "exists": true
+        },
+        {
+          "path": "app/api.py",
+          "exists": true
+        },
+        {
+          "path": "tests/test_query_engine.py",
+          "exists": true
+        }
+      ],
+      "results_doc": "phases/RESULTS/phase_2.md"
+    },
+    {
+      "id": "phase_3",
+      "num": 3,
+      "file": "phase_3_frontend.md",
+      "status": "completed",
+      "started_at": "2026-06-28T15:39:52.548836+00:00",
+      "completed_at": "2026-06-28T15:40:39.608368+00:00",
+      "artifacts": [
+        {
+          "path": "web/package.json",
+          "exists": true
+        },
+        {
+          "path": "web/app/page.tsx",
+          "exists": true
+        },
+        {
+          "path": "web/components/Chat.tsx",
+          "exists": true
+        },
+        {
+          "path": "web/components/SourceBadge.tsx",
+          "exists": true
+        },
+        {
+          "path": "web/components/EvidenceGraph.tsx",
+          "exists": true
+        }
+      ],
+      "results_doc": "phases/RESULTS/phase_3.md"
+    },
+    {
+      "id": "phase_4",
+      "num": 4,
+      "file": "phase_4_eval.md",
+      "status": "completed",
+      "started_at": "2026-06-28T15:40:51.614668+00:00",
+      "completed_at": "2026-06-28T15:41:46.360557+00:00",
+      "artifacts": [
+        {
+          "path": "eval/goldenset.jsonl",
+          "exists": true
+        },
+        {
+          "path": "eval/run_eval.py",
+          "exists": true
+        },
+        {
+          "path": "eval/report.md",
+          "exists": true
+        }
+      ],
+      "results_doc": "phases/RESULTS/phase_4.md"
+    },
+    {
+      "id": "phase_5",
+      "num": 5,
+      "file": "phase_5_production.md",
+      "status": "completed",
+      "started_at": "2026-06-28T21:58:34.948694+00:00",
+      "completed_at": "2026-06-28T22:03:25.574848+00:00",
+      "artifacts": [
+        {
+          "path": "app/logging_store.py",
+          "exists": true
+        },
+        {
+          "path": "scripts/scheduled_reindex.py",
+          "exists": true
+        },
+        {
+          "path": "scripts/ci_gate.py",
+          "exists": true
+        },
+        {
+          "path": "eval/ab_test.py",
+          "exists": true
+        },
+        {
+          "path": "tests/test_logging.py",
+          "exists": true
+        },
+        {
+          "path": "tests/test_ci_ab.py",
+          "exists": true
+        }
+      ],
+      "results_doc": "phases/RESULTS/phase_5.md"
+    }
+  ],
+  "updated_at": "2026-06-28T22:03:25.574863+00:00"
+}
