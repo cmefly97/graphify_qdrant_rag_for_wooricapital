@@ -14,17 +14,17 @@ venv/
 .omc/
 
 # 사내 기밀 원천/파생 데이터 — 외부 커밋 금지 (CLAUDE.md §1.6, 사용자 결정: 코드만 공개)
-souce/
-graphify-out/
+##souce/
+##graphify-out/
 # 평가 골든셋/결과 — 규정 파생 실제 수치 포함이라 제외
 eval/goldenset.jsonl
 eval/baseline.json
 eval/report.md
 
 # 데이터 산출물(인덱스)
-data/*.db
-data/*.json
-data/*.jsonl
+##data/*.db
+##data/*.json
+##data/*.jsonl
 !data/.gitkeep
 # 예외: 구조화 수치 테이블(사용자 결정으로 커밋). 주의: 규정 파생 정밀 수치 포함
 !data/tables.db

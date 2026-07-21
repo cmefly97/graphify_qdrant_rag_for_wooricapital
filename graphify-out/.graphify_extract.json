@@ -1,0 +1,1348 @@
+{
+  "nodes": [
+    {
+      "id": "souce_5_jaegogeumyung_unyeong_gijun",
+      "label": "재고금융/운영자금 심사운영기준 (E09012)",
+      "file_type": "document",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_5_sinyong_gwanli_team",
+      "label": "신용관리팀 (소관부서)",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_5_junggocha_unyeong_jageum",
+      "label": "중고차 운영자금",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_5_junggocha_jaegogeumyung",
+      "label": "중고차 재고금융",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_5_suipcha_jaegogeumyung",
+      "label": "수입차 재고금융",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_5_daesang_gogaek",
+      "label": "대상고객 (개인사업자/법인)",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_5_daesang_mulpum",
+      "label": "대상물품 (취급 대상 차량)",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_5_chaegwon_seoryu",
+      "label": "채권서류 징구기준",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_5_jabis",
+      "label": "JABIS (심사 전산 시스템)",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_5_chwigeupbulga_daesangja",
+      "label": "취급불가·제한 대상자",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_5_gras_deunggeup",
+      "label": "GRAS 등급 판정 (안티프로드)",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_5_nice_cb_jeomsu",
+      "label": "NICE CB점수 구간 (등급별 취급기준)",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_5_jeongyeol_gijun",
+      "label": "대출금액별 전결기준 (여신직무전결규칙)",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_5_pyeongga_hando",
+      "label": "평가한도 (판매대수/매출규모 기반)",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_5_carhistory_jeoghoeb",
+      "label": "카히스토리 사전관리 기준",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_5_chayang_seoljeong",
+      "label": "차량설정 기준 (1순위 100만원)",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_5_anti_fraud_jichim",
+      "label": "Anti-Fraud 운영지침",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_5_samja_yakjeong",
+      "label": "삼자약정 (당사·수입상·딜러)",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_5_yeonsin_jeongyeol_gyuchik",
+      "label": "여신직무전결규칙",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_ontology_munseo",
+      "label": "오토운영팀 온톨로지 및 에이전트 설계 요청",
+      "file_type": "document",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/오토운영팀 온톨로지 및 에이전트.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_ontology_chatbot",
+      "label": "오토운영팀 챗봇 (벡터DB 기존 시스템)",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/오토운영팀 온톨로지 및 에이전트.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_ontology_jeonhwan",
+      "label": "온톨로지·에이전트 전환 (개선 방향)",
+      "file_type": "rationale",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/오토운영팀 온톨로지 및 에이전트.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_ontology_faq_data",
+      "label": "FAQ 데이터 (지점 일반 문의)",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/오토운영팀 온톨로지 및 에이전트.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_ontology_gyujeong_data",
+      "label": "규정 데이터 (핵심 내부 규정)",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/오토운영팀 온톨로지 및 에이전트.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_ontology_unyeonggijun_data",
+      "label": "운영기준 데이터 (월별 금리·운영 기준)",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/오토운영팀 온톨로지 및 에이전트.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_10_junghyeong_truck_gijun",
+      "label": "중형트럭 시범운영 세부 운영기준 ('26.01~)",
+      "file_type": "document",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/10_샘플_중형트럭 시범운영기준.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_10_junggocha_gihoek_team",
+      "label": "중고차기획팀",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/10_샘플_중형트럭 시범운영기준.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_10_chwigeup_tonsu",
+      "label": "취급톤수 조건 (2~10톤 화물차)",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/10_샘플_중형트럭 시범운영기준.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_10_eopryeok_gijun",
+      "label": "사업자 업력 1년 이상 기준",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/10_샘플_중형트럭 시범운영기준.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_10_geumlinego_buljeong",
+      "label": "금리네고 부정사용 페널티",
+      "file_type": "rationale",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/10_샘플_중형트럭 시범운영기준.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_10_juhaenggeori_jehan",
+      "label": "주행거리 제한 (90만Km 초과 LTV 50%)",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/10_샘플_중형트럭 시범운영기준.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_9_junggoseungyong_gijun",
+      "label": "중고승용 상품 운영조건 ('26.03.01)",
+      "file_type": "document",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_9_guipdaechul_ron",
+      "label": "중고승용차 구입대출 (론)",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_9_halbu_guipdaechul",
+      "label": "중고승용차 할부 구입대출",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_9_dual_offer",
+      "label": "Dual Offer 상품 (Dual_C / Dual_O)",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_9_esm_dealer_daechul",
+      "label": "ESM·딜러 구입대출",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_9_enka_zero",
+      "label": "엔카 무수수료 (엔카_Zero) 상품",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_9_sinyongguje_sangpum",
+      "label": "신용구제 상품 운영기준 (SP_R)",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_9_geumli_deunggeup_gl",
+      "label": "금리등급 / G/L 금리 / 조정금리(NEGO)",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_9_nice_deunggeup_table",
+      "label": "NICE 등급·점수 기준표",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_9_hj_seg",
+      "label": "HJ Seg. (저주행 우량차 판정)",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_9_sliding",
+      "label": "슬라이딩 (수수료 차감 금리 인하)",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_9_r_pandan_filtering",
+      "label": "R판정/B판정 필터링 (취급가부)",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_9_carhistory_chayang_gijun",
+      "label": "카히스토리 차량 취급기준 (특수사고 불가)",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_9_gonggong_mydata",
+      "label": "공공마이데이터 (업력/재직 증빙)",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_9_jungdosanghwan_susuryo",
+      "label": "중도상환수수료율 / 연체이자율",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_8_junggolease_gijun",
+      "label": "중고리스 상품운영기준 ('26.03)",
+      "file_type": "document",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/8_샘플_중고리스 운영기준(변경).pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_8_unyonglease",
+      "label": "운용리스",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/8_샘플_중고리스 운영기준(변경).pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_8_geumyunglease",
+      "label": "금융리스",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/8_샘플_중고리스 운영기준(변경).pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_8_jangayul_table",
+      "label": "잔가율표 / 잔가군표 (국산·수입)",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/8_샘플_중고리스 운영기준(변경).pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_8_irr_nego",
+      "label": "IRR Nego 기준 (지점/본사 NEGO)",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/8_샘플_중고리스 운영기준(변경).pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_8_chwigeup_jehan_chajong",
+      "label": "중고리스 취급제한 차종",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/8_샘플_중고리스 운영기준(변경).pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_8_seongneung_jeomgeom",
+      "label": "성능상태점검기록부 확인기준",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/8_샘플_중고리스 운영기준(변경).pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_8_otolease_simsa_jichim",
+      "label": "오토리스 심사운영기준 (중고차 심사지침)",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/8_샘플_중고리스 운영기준(변경).pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_8_geumsobeop_gyeonjeokseo",
+      "label": "금소법 견적서 제공 규정 (직원 한정)",
+      "file_type": "rationale",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/8_샘플_중고리스 운영기준(변경).pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_8_boheom_jilkwon",
+      "label": "보험가입사실확인서·질권설정 (여전법 35조)",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/8_샘플_중고리스 운영기준(변경).pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "souce_8_yeongeop_yeoeseungin",
+      "label": "본사 영업예외승인 (중고리스 전건)",
+      "file_type": "concept",
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/8_샘플_중고리스 운영기준(변경).pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "souce_5_jaegogeumyung_unyeong_gijun",
+      "target": "souce_5_sinyong_gwanli_team",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_5_jaegogeumyung_unyeong_gijun",
+      "target": "souce_5_junggocha_unyeong_jageum",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_5_jaegogeumyung_unyeong_gijun",
+      "target": "souce_5_junggocha_jaegogeumyung",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_5_jaegogeumyung_unyeong_gijun",
+      "target": "souce_5_suipcha_jaegogeumyung",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_5_junggocha_unyeong_jageum",
+      "target": "souce_5_daesang_gogaek",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_5_junggocha_jaegogeumyung",
+      "target": "souce_5_daesang_mulpum",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_5_junggocha_jaegogeumyung",
+      "target": "souce_5_chaegwon_seoryu",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_5_chwigeupbulga_daesangja",
+      "target": "souce_5_jabis",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_5_chwigeupbulga_daesangja",
+      "target": "souce_5_gras_deunggeup",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_5_gras_deunggeup",
+      "target": "souce_5_anti_fraud_jichim",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_5_junggocha_unyeong_jageum",
+      "target": "souce_5_nice_cb_jeomsu",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_5_jeongyeol_gijun",
+      "target": "souce_5_yeonsin_jeongyeol_gyuchik",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_5_jeongyeol_gijun",
+      "target": "souce_5_pyeongga_hando",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_5_junggocha_jaegogeumyung",
+      "target": "souce_5_carhistory_jeoghoeb",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_5_junggocha_jaegogeumyung",
+      "target": "souce_5_chayang_seoljeong",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_5_junggocha_jaegogeumyung",
+      "target": "souce_5_anti_fraud_jichim",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_5_suipcha_jaegogeumyung",
+      "target": "souce_5_samja_yakjeong",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/5_재고금융_운영자금심사운영기준.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_ontology_munseo",
+      "target": "souce_ontology_chatbot",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/오토운영팀 온톨로지 및 에이전트.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_ontology_munseo",
+      "target": "souce_ontology_jeonhwan",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/오토운영팀 온톨로지 및 에이전트.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_ontology_jeonhwan",
+      "target": "souce_ontology_chatbot",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/오토운영팀 온톨로지 및 에이전트.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_ontology_munseo",
+      "target": "souce_ontology_faq_data",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/오토운영팀 온톨로지 및 에이전트.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_ontology_munseo",
+      "target": "souce_ontology_gyujeong_data",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/오토운영팀 온톨로지 및 에이전트.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_ontology_munseo",
+      "target": "souce_ontology_unyeonggijun_data",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/오토운영팀 온톨로지 및 에이전트.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_ontology_gyujeong_data",
+      "target": "souce_5_jaegogeumyung_unyeong_gijun",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/오토운영팀 온톨로지 및 에이전트.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_ontology_unyeonggijun_data",
+      "target": "souce_9_junggoseungyong_gijun",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/오토운영팀 온톨로지 및 에이전트.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_ontology_unyeonggijun_data",
+      "target": "souce_8_junggolease_gijun",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/오토운영팀 온톨로지 및 에이전트.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_ontology_unyeonggijun_data",
+      "target": "souce_10_junghyeong_truck_gijun",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/오토운영팀 온톨로지 및 에이전트.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_10_junghyeong_truck_gijun",
+      "target": "souce_10_junggocha_gihoek_team",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/10_샘플_중형트럭 시범운영기준.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_10_junghyeong_truck_gijun",
+      "target": "souce_10_chwigeup_tonsu",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/10_샘플_중형트럭 시범운영기준.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_10_junghyeong_truck_gijun",
+      "target": "souce_10_eopryeok_gijun",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/10_샘플_중형트럭 시범운영기준.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_10_junghyeong_truck_gijun",
+      "target": "souce_10_geumlinego_buljeong",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/10_샘플_중형트럭 시범운영기준.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_10_junghyeong_truck_gijun",
+      "target": "souce_10_juhaenggeori_jehan",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/10_샘플_중형트럭 시범운영기준.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_10_junghyeong_truck_gijun",
+      "target": "souce_9_junggoseungyong_gijun",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/10_샘플_중형트럭 시범운영기준.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_9_junggoseungyong_gijun",
+      "target": "souce_9_guipdaechul_ron",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_9_junggoseungyong_gijun",
+      "target": "souce_9_halbu_guipdaechul",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_9_junggoseungyong_gijun",
+      "target": "souce_9_dual_offer",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_9_junggoseungyong_gijun",
+      "target": "souce_9_esm_dealer_daechul",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_9_junggoseungyong_gijun",
+      "target": "souce_9_enka_zero",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_9_junggoseungyong_gijun",
+      "target": "souce_9_sinyongguje_sangpum",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_9_guipdaechul_ron",
+      "target": "souce_9_geumli_deunggeup_gl",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_9_geumli_deunggeup_gl",
+      "target": "souce_9_nice_deunggeup_table",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_9_geumli_deunggeup_gl",
+      "target": "souce_9_hj_seg",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_9_halbu_guipdaechul",
+      "target": "souce_9_sliding",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_9_sinyongguje_sangpum",
+      "target": "souce_9_r_pandan_filtering",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_9_sinyongguje_sangpum",
+      "target": "souce_9_gonggong_mydata",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_9_sinyongguje_sangpum",
+      "target": "souce_9_junggoseungyong_gijun",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_9_enka_zero",
+      "target": "souce_9_carhistory_chayang_gijun",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_9_junggoseungyong_gijun",
+      "target": "souce_9_jungdosanghwan_susuryo",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_9_esm_dealer_daechul",
+      "target": "souce_9_gonggong_mydata",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_8_junggolease_gijun",
+      "target": "souce_8_unyonglease",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/8_샘플_중고리스 운영기준(변경).pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_8_junggolease_gijun",
+      "target": "souce_8_geumyunglease",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/8_샘플_중고리스 운영기준(변경).pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_8_unyonglease",
+      "target": "souce_8_jangayul_table",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/8_샘플_중고리스 운영기준(변경).pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_8_geumyunglease",
+      "target": "souce_8_jangayul_table",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/8_샘플_중고리스 운영기준(변경).pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_8_unyonglease",
+      "target": "souce_8_irr_nego",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/8_샘플_중고리스 운영기준(변경).pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_8_junggolease_gijun",
+      "target": "souce_8_chwigeup_jehan_chajong",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/8_샘플_중고리스 운영기준(변경).pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_8_junggolease_gijun",
+      "target": "souce_8_seongneung_jeomgeom",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/8_샘플_중고리스 운영기준(변경).pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_8_chwigeup_jehan_chajong",
+      "target": "souce_8_otolease_simsa_jichim",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/8_샘플_중고리스 운영기준(변경).pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_8_junggolease_gijun",
+      "target": "souce_8_geumsobeop_gyeonjeokseo",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/8_샘플_중고리스 운영기준(변경).pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_8_junggolease_gijun",
+      "target": "souce_8_boheom_jilkwon",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/8_샘플_중고리스 운영기준(변경).pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_8_junggolease_gijun",
+      "target": "souce_8_yeongeop_yeoeseungin",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/8_샘플_중고리스 운영기준(변경).pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_8_junggolease_gijun",
+      "target": "souce_8_otolease_simsa_jichim",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/8_샘플_중고리스 운영기준(변경).pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_5_carhistory_jeoghoeb",
+      "target": "souce_9_carhistory_chayang_gijun",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_9_carhistory_chayang_gijun",
+      "target": "souce_8_seongneung_jeomgeom",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/8_샘플_중고리스 운영기준(변경).pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_5_nice_cb_jeomsu",
+      "target": "souce_9_nice_deunggeup_table",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_5_gras_deunggeup",
+      "target": "souce_9_r_pandan_filtering",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_8_irr_nego",
+      "target": "souce_9_geumli_deunggeup_gl",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/8_샘플_중고리스 운영기준(변경).pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "souce_10_eopryeok_gijun",
+      "target": "souce_5_daesang_gogaek",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/10_샘플_중형트럭 시범운영기준.pdf",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "auto_team_data_sources",
+      "label": "오토운영팀 3대 데이터 출처 (FAQ·규정·운영기준)",
+      "nodes": [
+        "souce_ontology_faq_data",
+        "souce_ontology_gyujeong_data",
+        "souce_ontology_unyeonggijun_data",
+        "souce_ontology_chatbot"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/오토운영팀 온톨로지 및 에이전트.md"
+    },
+    {
+      "id": "credit_grade_decisioning",
+      "label": "신용등급 기반 취급가부 판정 패턴 (NICE/CB/R판정/금리등급)",
+      "nodes": [
+        "souce_5_nice_cb_jeomsu",
+        "souce_9_nice_deunggeup_table",
+        "souce_9_r_pandan_filtering",
+        "souce_9_geumli_deunggeup_gl"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/9_샘플_중고승용 상품운영기준.pdf"
+    },
+    {
+      "id": "vehicle_history_screening",
+      "label": "차량 이력·상태 점검 취급기준 (카히스토리·성능점검)",
+      "nodes": [
+        "souce_5_carhistory_jeoghoeb",
+        "souce_9_carhistory_chayang_gijun",
+        "souce_8_seongneung_jeomgeom"
+      ],
+      "relation": "implement",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/Users/mac_al03256431/Documents/DEV/2_JB_Wooricapital_Auto_Agent_2/souce/8_샘플_중고리스 운영기준(변경).pdf"
+    }
+  ],
+  "input_tokens": 110000,
+  "output_tokens": 6567
+}

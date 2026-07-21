@@ -1,0 +1,221 @@
+{
+  "communities": {
+    "0": [
+      "souce_8_boheom_jilkwon",
+      "souce_8_chwigeup_jehan_chajong",
+      "souce_8_geumsobeop_gyeonjeokseo",
+      "souce_8_geumyunglease",
+      "souce_8_irr_nego",
+      "souce_8_jangayul_table",
+      "souce_8_junggolease_gijun",
+      "souce_8_otolease_simsa_jichim",
+      "souce_8_unyonglease",
+      "souce_8_yeongeop_yeoeseungin"
+    ],
+    "1": [
+      "souce_10_chwigeup_tonsu",
+      "souce_10_eopryeok_gijun",
+      "souce_10_geumlinego_buljeong",
+      "souce_10_juhaenggeori_jehan",
+      "souce_10_junggocha_gihoek_team",
+      "souce_10_junghyeong_truck_gijun",
+      "souce_5_daesang_gogaek",
+      "souce_5_junggocha_unyeong_jageum"
+    ],
+    "2": [
+      "souce_5_carhistory_jeoghoeb",
+      "souce_5_chaegwon_seoryu",
+      "souce_5_chayang_seoljeong",
+      "souce_5_daesang_mulpum",
+      "souce_5_junggocha_jaegogeumyung",
+      "souce_8_seongneung_jeomgeom",
+      "souce_9_carhistory_chayang_gijun",
+      "souce_9_enka_zero"
+    ],
+    "3": [
+      "souce_9_dual_offer",
+      "souce_9_esm_dealer_daechul",
+      "souce_9_gonggong_mydata",
+      "souce_9_halbu_guipdaechul",
+      "souce_9_jungdosanghwan_susuryo",
+      "souce_9_junggoseungyong_gijun",
+      "souce_9_sinyongguje_sangpum",
+      "souce_9_sliding"
+    ],
+    "4": [
+      "souce_5_anti_fraud_jichim",
+      "souce_5_chwigeupbulga_daesangja",
+      "souce_5_gras_deunggeup",
+      "souce_5_jabis",
+      "souce_9_r_pandan_filtering"
+    ],
+    "5": [
+      "souce_5_jaegogeumyung_unyeong_gijun",
+      "souce_5_samja_yakjeong",
+      "souce_5_sinyong_gwanli_team",
+      "souce_5_suipcha_jaegogeumyung",
+      "souce_ontology_gyujeong_data"
+    ],
+    "6": [
+      "souce_5_nice_cb_jeomsu",
+      "souce_9_geumli_deunggeup_gl",
+      "souce_9_guipdaechul_ron",
+      "souce_9_hj_seg",
+      "souce_9_nice_deunggeup_table"
+    ],
+    "7": [
+      "souce_ontology_chatbot",
+      "souce_ontology_faq_data",
+      "souce_ontology_jeonhwan",
+      "souce_ontology_munseo",
+      "souce_ontology_unyeonggijun_data"
+    ],
+    "8": [
+      "souce_5_jeongyeol_gijun",
+      "souce_5_pyeongga_hando",
+      "souce_5_yeonsin_jeongyeol_gyuchik"
+    ]
+  },
+  "cohesion": {
+    "0": 0.24444444444444444,
+    "1": 0.25,
+    "2": 0.25,
+    "3": 0.2857142857142857,
+    "4": 0.4,
+    "5": 0.4,
+    "6": 0.4,
+    "7": 0.5,
+    "8": 0.6666666666666666
+  },
+  "gods": [
+    {
+      "id": "souce_9_junggoseungyong_gijun",
+      "label": "중고승용 상품 운영조건 ('26.03.01)",
+      "degree": 9
+    },
+    {
+      "id": "souce_8_junggolease_gijun",
+      "label": "중고리스 상품운영기준 ('26.03)",
+      "degree": 9
+    },
+    {
+      "id": "souce_10_junghyeong_truck_gijun",
+      "label": "중형트럭 시범운영 세부 운영기준 ('26.01~)",
+      "degree": 7
+    },
+    {
+      "id": "souce_5_junggocha_jaegogeumyung",
+      "label": "중고차 재고금융",
+      "degree": 6
+    },
+    {
+      "id": "souce_5_jaegogeumyung_unyeong_gijun",
+      "label": "재고금융/운영자금 심사운영기준 (E09012)",
+      "degree": 5
+    },
+    {
+      "id": "souce_ontology_munseo",
+      "label": "오토운영팀 온톨로지 및 에이전트 설계 요청",
+      "degree": 5
+    },
+    {
+      "id": "souce_ontology_unyeonggijun_data",
+      "label": "운영기준 데이터 (월별 금리·운영 기준)",
+      "degree": 4
+    },
+    {
+      "id": "souce_9_geumli_deunggeup_gl",
+      "label": "금리등급 / G/L 금리 / 조정금리(NEGO)",
+      "degree": 4
+    },
+    {
+      "id": "souce_5_junggocha_unyeong_jageum",
+      "label": "중고차 운영자금",
+      "degree": 3
+    },
+    {
+      "id": "souce_5_gras_deunggeup",
+      "label": "GRAS 등급 판정 (안티프로드)",
+      "degree": 3
+    }
+  ],
+  "surprises": [
+    {
+      "source": "사업자 업력 1년 이상 기준",
+      "target": "대상고객 (개인사업자/법인)",
+      "source_files": [
+        "10_샘플_중형트럭 시범운영기준.pdf",
+        "5_재고금융_운영자금심사운영기준.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc ↔ paper); connects across different repos/directories; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "GRAS 등급 판정 (안티프로드)",
+      "target": "R판정/B판정 필터링 (취급가부)",
+      "source_files": [
+        "5_재고금융_운영자금심사운영기준.md",
+        "9_샘플_중고승용 상품운영기준.pdf"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc ↔ paper); connects across different repos/directories; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "NICE CB점수 구간 (등급별 취급기준)",
+      "target": "NICE 등급·점수 기준표",
+      "source_files": [
+        "5_재고금융_운영자금심사운영기준.md",
+        "9_샘플_중고승용 상품운영기준.pdf"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc ↔ paper); connects across different repos/directories; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "카히스토리 사전관리 기준",
+      "target": "카히스토리 차량 취급기준 (특수사고 불가)",
+      "source_files": [
+        "5_재고금융_운영자금심사운영기준.md",
+        "9_샘플_중고승용 상품운영기준.pdf"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc ↔ paper); connects across different repos/directories; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "운영기준 데이터 (월별 금리·운영 기준)",
+      "target": "중형트럭 시범운영 세부 운영기준 ('26.01~)",
+      "source_files": [
+        "오토운영팀 온톨로지 및 에이전트.md",
+        "10_샘플_중형트럭 시범운영기준.pdf"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc ↔ paper); connects across different repos/directories; bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `중고승용 상품 운영조건 ('26.03.01)` connect `Community 3` to `Community 1`, `Community 2`, `Community 6`, `Community 7`?",
+      "why": "High betweenness centrality (0.349) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `운영기준 데이터 (월별 금리·운영 기준)` connect `Community 7` to `Community 0`, `Community 1`, `Community 3`?",
+      "why": "High betweenness centrality (0.292) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `중고리스 상품운영기준 ('26.03)` connect `Community 0` to `Community 2`, `Community 7`?",
+      "why": "High betweenness centrality (0.264) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `신용관리팀 (소관부서)`, `대상물품 (취급 대상 차량)`, `채권서류 징구기준` to the rest of the system?",
+      "why": "20 weakly-connected nodes found - possible documentation gaps or missing edges."
+    }
+  ]
+}
