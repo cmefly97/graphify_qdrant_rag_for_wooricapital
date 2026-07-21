@@ -116,6 +116,7 @@ class GatewayClient:
             "messages": messages,
             "temperature": temperature,
             "max_tokens": max_tokens or self.s.answer_max_tokens,
+            "chat_template_kwargs": {"thinking": self.s.hcx30_thinking},
         }, self.s.hcx30_api_key)
         return self._extract_content(data)
 

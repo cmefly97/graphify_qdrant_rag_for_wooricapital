@@ -13,6 +13,7 @@ class Settings(BaseSettings):
     hcx30_base_url: str = "http://223.130.140.68:8000/v1/chat/completions"
     hcx30_api_key: str = ""
     hcx30_model: str = "hcx-agent-06"
+    hcx30_thinking: bool = False  # chat_template_kwargs.thinking (thinking 모드 on/off)
     qwen_base_url: str = "http://223.130.140.218:8000/v1/chat/completions"
     qwen_model: str = "Qwen3.6-35B-A3B"
 
@@ -31,7 +32,7 @@ class Settings(BaseSettings):
     allow_offline_fallback: bool = True
     gateway_timeout: int = 30
     gateway_max_retries: int = 3
-    answer_max_tokens: int = 2048  # 답변 최대 토큰(잘림 방지). .env ANSWER_MAX_TOKENS 로 조정
+    answer_max_tokens: int = 1000  # 답변 최대 토큰(잘림 방지). .env ANSWER_MAX_TOKENS 로 조정
 
     @property
     def has_gateway_key(self) -> bool:
