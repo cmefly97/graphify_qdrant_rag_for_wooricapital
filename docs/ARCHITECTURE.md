@@ -12,7 +12,7 @@ Backend (FastAPI)
   [3] 그래프탐색(NetworkX) → 인접·커뮤니티 1~2홉 확장
   [3'] 구조화 조회(tables.db) → 정밀 수치
   [4] 컨텍스트 조립 + 재랭킹 + 출처부착
-  [5] 답변 생성(HCX-30B / hcx-agent-05) → 근거 인용 / 모르면 모른다
+  [5] 답변 생성(HCX-30B / hcx-agent-06) → 근거 인용 / 모르면 모른다
         │
   사내 게이트웨이(namc-aigw): HCX · Qwen · Octen-Embedding
   인덱스: Qdrant(벡터) · graph.json(NX) · tables.db(수치) · docstore(원문)
@@ -66,7 +66,7 @@ app/ (FastAPI)  ·  pipeline/ (인덱싱)  ·  web/ (Next.js)  ·  tests/  ·  d
 - **오매칭 방지**: 비범위 질의는 상품명 일치 필수, 흔한 단어 1개 매칭 차단, 팩트 라우터는 속성 우선.
 
 ### LLM/임베딩 (게이트웨이)
-- 답변: **HCX-30B-Text(`hcx-agent-05`)** `HCX30_*` — 223.130.140.68:11000. 폴백 Qwen3.6 `QWEN_*` — 223.130.140.218:8000.
+- 답변: **HCX-30B-Text(`hcx-agent-06`)** `HCX30_*` — 223.130.140.68:8000. 폴백 Qwen3.6 `QWEN_*` — 223.130.140.218:8000.
 - 임베딩: **Octen-8B(4096d)** — 사내 vLLM(223.130.140.218:8002), 키 불필요(`EMBEDDING_API_KEY` 빈 값). 배치 임베딩+개별 폴백.
 - `chat`에 `max_tokens`(ANSWER_MAX_TOKENS, 기본 2048)로 답변 잘림 방지.
 

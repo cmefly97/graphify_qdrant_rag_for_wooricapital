@@ -9,7 +9,7 @@
 - [ ] `requirements.txt`/`pyproject.toml` + ruff/black 설정
 - [ ] Docker Compose: FastAPI + Qdrant
 - [ ] 게이트웨이 클라이언트(타임아웃·재시도·캐시) + 스모크 테스트:
-  - [ ] HCX-30B(hcx-agent-05) chat 호출 1건 성공
+  - [ ] HCX-30B(hcx-agent-06) chat 호출 1건 성공
   - [ ] Octen-Embedding-8B 임베딩 1건 성공(벡터 차원 확인)
 - [ ] 헬스체크 엔드포인트 `/health`
 

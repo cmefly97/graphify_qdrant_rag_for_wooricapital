@@ -77,4 +77,4 @@ from app.api import answer_query
 r = answer_query("금리등급 2등급일 때 적용 될 수 있는 최저 금리가 궁금해", with_trace=True)
 print(r["answer"]); print(r["trace"]); print(r["sources"])
 ```
-> 설명형(테이블 미매칭) 질의는 ③에서 None → ④⑤ 검색 결과로 ⑦ LLM(HCX-30B / hcx-agent-05) 생성 경로를 탄다. 근거 없으면 "규정에 명시되어 있지 않습니다".
+> 설명형(테이블 미매칭) 질의는 ③에서 None → ④⑤ 검색 결과로 ⑦ LLM(HCX-30B / hcx-agent-06) 생성 경로를 탄다. 근거 없으면 "규정에 명시되어 있지 않습니다".

@@ -56,7 +56,7 @@
      ┌──────────▼─────────┐     ┌──────────▼──────────┐
      │ Naver 사내 게이트웨이 │     │  인덱스 저장소        │
      │ (namc-aigw.io.naver) │     │  · Qdrant(벡터)      │
-     │ · HCX-30B(hcx-agent-05)│   │  · graph.json(NX)    │
+     │ · HCX-30B(hcx-agent-06)│   │  · graph.json(NX)    │
      │ · Qwen3.6            │     │  · tables.db(수치)   │
      │ · Octen-Embedding-8B │     │  · docstore(원문청크) │
      └──────────────────────┘     └─────────────────────┘
@@ -142,7 +142,7 @@
    벡터점수 + 그래프거리 + 메타필터(유효일자 최신)로 정렬
    각 근거에 출처(문서·조항·일자) 부착
         │
-[5] 답변 생성(LLM, HCX-30B / hcx-agent-05)
+[5] 답변 생성(LLM, HCX-30B / hcx-agent-06)
    · 근거 기반 답변 + 출처 인용
    · 근거 없으면 "규정에 명시되어 있지 않습니다"
    · 수치는 [3-A] 결과를 우선 신뢰
@@ -172,7 +172,7 @@
 | 그래프 | **NetworkX** (graph.json 로드) | 데이터 규모상 메모리로 충분 |
 | 구조화 | **SQLite / parquet** | 금리·등급 테이블 |
 | 문서스토어 | 파일/SQLite | 원문 청크 보관 |
-| LLM(답변) | **HCX-30B-Text (`hcx-agent-05`)** | `HCX30_MODEL` |
+| LLM(답변) | **HCX-30B-Text (`hcx-agent-06`)** | `HCX30_MODEL` |
 | LLM(대안) | **Qwen3.6-35B** | 게이트웨이 재사용, 폴백/비교용 |
 | 임베딩 | **Octen-Embedding-8B** | `/v1/embeddings` |
 | 이미지 | **VLM 비전** | OCR/캡셔닝 |
@@ -184,9 +184,9 @@
 ### 5.1 .env (제공 기준)
 ```dotenv
 # LLM: HCX-30B-Text (사내 게이트웨이 · OpenAI 호환 · thinking)
-HCX30_BASE_URL=http://223.130.140.68:11000/v1/chat/completions
+HCX30_BASE_URL=http://223.130.140.68:8000/v1/chat/completions
 HCX30_API_KEY=********
-HCX30_MODEL=hcx-agent-05
+HCX30_MODEL=hcx-agent-06
 # 대안 LLM
 QWEN_BASE_URL=http://223.130.140.218:8000/v1/chat/completions
 QWEN_MODEL=Qwen3.6-35B-A3B

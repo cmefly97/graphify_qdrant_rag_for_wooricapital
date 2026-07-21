@@ -15,7 +15,7 @@
 2. **출처 의무**: 모든 답변은 근거(문서명·조항/행·유효일자)를 함께 반환한다. 근거 없는 주장 금지.
 3. **모르면 모른다**: 근거가 없으면 "규정에 명시되어 있지 않습니다"로 답한다. 추측 금지.
 4. **유효일자 우선**: 운영기준이 충돌하면 최신 유효일자 본을 우선하고, 과거본 존재를 알린다.
-5. **LLM/임베딩은 사내 게이트웨이만**: HCX-30B(`223.130.140.68:11000`) / Qwen 폴백(`223.130.140.218:8000`) / Octen-Embedding(`223.130.140.218:8002`)만 사용. 외부 모델 호출 금지.
+5. **LLM/임베딩은 사내 게이트웨이만**: HCX-30B(`223.130.140.68:8000`) / Qwen 폴백(`223.130.140.218:8000`) / Octen-Embedding(`223.130.140.218:8002`)만 사용. 외부 모델 호출 금지.
 6. **비밀정보**: API 키 등은 `.env`로만 관리. 코드/문서/로그/커밋에 키를 하드코딩하거나 노출하지 않는다. `.env`는 `.gitignore`.
 7. **스코프 고정**: MVP 범위(아래 4장)를 벗어나는 기능을 임의 추가하지 않는다. 필요 시 ADR에 기록 후 진행.
 
@@ -24,7 +24,7 @@
 ## 2. 기술 스택 (고정)
 - Backend: Python 3.11 + FastAPI
 - 벡터DB: Qdrant · 그래프: NetworkX(`graphify-out/graph.json` 로드) · 구조화: SQLite/parquet(`tables.db`)
-- LLM(답변): HCX-30B-Text (`hcx-agent-05`, OpenAI 호환·thinking) / 폴백 Qwen3.6-35B
+- LLM(답변): HCX-30B-Text (`hcx-agent-06`, OpenAI 호환·thinking) / 폴백 Qwen3.6-35B
 - 임베딩: Octen-Embedding-8B · 이미지: VLM 비전(OCR, 후속)
 - Frontend: Next.js + React · 그래프 시각화: Cytoscape.js
 - 배포: Docker Compose (API + Qdrant)

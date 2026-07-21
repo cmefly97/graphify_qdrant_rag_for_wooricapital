@@ -10,9 +10,9 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
     # LLM: HCX-30B-Text (사내 게이트웨이 · OpenAI 호환 · thinking)
-    hcx30_base_url: str = "http://223.130.140.68:11000/v1/chat/completions"
+    hcx30_base_url: str = "http://223.130.140.68:8000/v1/chat/completions"
     hcx30_api_key: str = ""
-    hcx30_model: str = "hcx-agent-05"
+    hcx30_model: str = "hcx-agent-06"
     qwen_base_url: str = "http://223.130.140.218:8000/v1/chat/completions"
     qwen_model: str = "Qwen3.6-35B-A3B"
 

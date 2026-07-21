@@ -27,7 +27,7 @@
 | 벡터DB | Qdrant (리모트, 컬렉션 `woori_auto`, 4096d/Cosine) |
 | 그래프 | NetworkX (`graphify-out/graph.json` 로드) |
 | 구조화 | SQLite/parquet (`tables.db`) |
-| LLM(답변) | HCX-30B-Text (`hcx-agent-05`) · 폴백 Qwen3.6-35B-A3B |
+| LLM(답변) | HCX-30B-Text (`hcx-agent-06`) · 폴백 Qwen3.6-35B-A3B |
 | 임베딩 | Octen-Embedding-8B |
 | Frontend | Next.js + React · 그래프 시각화 Cytoscape.js |
 | 배포 | Docker Compose (API + Qdrant) |
