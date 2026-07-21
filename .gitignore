@@ -26,6 +26,8 @@ data/*.db
 data/*.json
 data/*.jsonl
 !data/.gitkeep
+# 예외: 구조화 수치 테이블(사용자 결정으로 커밋). 주의: 규정 파생 정밀 수치 포함
+!data/tables.db
 
 # OS
 .DS_Store
